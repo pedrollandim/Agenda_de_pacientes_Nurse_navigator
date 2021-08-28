@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanoDeCuidadosActivity">
+
+
+    <TextView
+        android:id="@+id/plano_de_cuidados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Plano de cuidados: "
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/plano_de_cuidados_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Agendar Consulta com o Médico Responsável: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados" />
+
+    <Switch
+        android:id="@+id/plano_de_cuidados_1_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Aceitou: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_1"/>
+
+    <Switch
+        android:id="@+id/plano_de_cuidados_1_NA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Não aceitou: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/plano_de_cuidados_1_A"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_1"/>
+
+    <TextView
+        android:id="@+id/plano_de_cuidados_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Orientação de Saúde: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_1_A" />
+
+    <Switch
+        android:id="@+id/plano_de_cuidados_2_R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Realizou: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_2"/>
+
+    <Switch
+        android:id="@+id/plano_de_cuidados_2_NR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Não realizou: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/plano_de_cuidados_2_R"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_2"/>
+
+    <TextView
+        android:id="@+id/plano_de_cuidados_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Paciente identificado com Doença Crônica: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_2_R" />
+
+    <Switch
+        android:id="@+id/plano_de_cuidados_3_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Não: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_3"/>
+
+    <Switch
+        android:id="@+id/plano_de_cuidados_3_HAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="HAS: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/plano_de_cuidados_3_n"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_3"/>
+    <Switch
+        android:id="@+id/plano_de_cuidados_3_DM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="DM: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/plano_de_cuidados_3_HAS"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_3"/>
+
+    <Switch
+        android:id="@+id/plano_de_cuidados_3_DLP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="DLP: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_3_n"/>
+    <Switch
+        android:id="@+id/plano_de_cuidados_3_ICO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ICO: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/plano_de_cuidados_3_DLP"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_3_HAS"/>
+
+    <Switch
+        android:id="@+id/plano_de_cuidados_3_ICC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ICC: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/plano_de_cuidados_3_ICO"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_3_DM"/>
+    <Switch
+        android:id="@+id/plano_de_cuidados_3_IRC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="IRC: "
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_3_DLP"/>
+    <Button
+        android:id="@+id/plano_de_cuidados_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="+"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plano_de_cuidados_3_IRC" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+</HorizontalScrollView>

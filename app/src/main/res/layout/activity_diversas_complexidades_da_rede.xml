@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DiversasComplexidadesDaRedeActivity">
+
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_consultas_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Consultas aos Especialistas"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_consultas_1_especialidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Especialidade"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/diversas_complexidades_da_rede_assistencial_consultas_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_consultas_1_periodo_IF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Périodo inicial e Périodo final"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_consultas_1_especialidade" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_consultas_1_periodo_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="00/00/0000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_consultas_1_periodo_IF" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_consultas_1_periodo_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="00/00/0000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/diversas_complexidades_da_rede_assistencial_consultas_1_periodo_I"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_consultas_1_periodo_IF" />
+
+        <ListView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_consultas_1_medico_especialista"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:text="Passagens pelo Pronto Socorro"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_consultas_1_periodo_I" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Passagem por Pronto Socorro"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_consultas_1_medico_especialista" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_IF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Périodo inicial e Périodo final"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="00/00/0000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_IF" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="00/00/0000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_I"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_IF" />
+
+        <ListView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_lista"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:text="Passagens pelo Pronto Socorro"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_I" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_internacaoes_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Internações"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_pronto_socorro_2_lista" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_internacaoes_3_IF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Périodo inicial e Périodo final"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_internacaoes_3" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_internacaoes_3_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="00/00/0000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_internacaoes_3_IF" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_internacaoes_3_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="00/00/0000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/diversas_complexidades_da_rede_assistencial_internacaoes_3_I"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_internacaoes_3_IF" />
+
+        <ListView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_internacaoes_3_lista"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:text="Passagens pelo Pronto Socorro"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_internacaoes_3_I" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_procedimentos_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Pequenos procedimentos"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_internacaoes_3_lista" />
+
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_procedimentos_4_IF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Périodo inicial e Périodo final"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_procedimentos_4" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_procedimentos_4_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="00/00/0000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_procedimentos_4_IF" />
+
+        <TextView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_procedimentos_4_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="00/00/0000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/diversas_complexidades_da_rede_assistencial_procedimentos_4_I"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_procedimentos_4_IF" />
+
+        <ListView
+            android:id="@+id/diversas_complexidades_da_rede_assistencial_procedimentos_4_lista"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:text="Passagens pelo Pronto Socorro"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diversas_complexidades_da_rede_assistencial_procedimentos_4_I" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

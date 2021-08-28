@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavegadorDoPacienteActivity">
+
+
+    <Button
+        android:id="@+id/navegador_paciente_lista_clientes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/lista" />
+
+    <Button
+        android:id="@+id/navegador_paciente_sinais_alerta"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/alertaf"
+        app:layout_constraintStart_toEndOf="@id/navegador_paciente_lista_clientes"
+        app:layout_constraintTop_toTopOf="@id/navegador_paciente_lista_clientes"
+        app:layout_constraintBottom_toTopOf="@id/navegador_paciente_relatorios"/>
+
+    <Button
+        android:id="@+id/navegador_paciente_relatorios"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/icone_agenda"
+        app:layout_constraintTop_toBottomOf="@id/navegador_paciente_lista_clientes"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
